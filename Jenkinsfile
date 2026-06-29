@@ -13,7 +13,7 @@ pipeline {
 			steps {
 				sh './mvnw test -D testGroups=unit'
 			}
-
+		}
 
                 stage('Integration tests') {
                     when {
@@ -27,5 +27,4 @@ pipeline {
             }
         }
     }
-}
 }
